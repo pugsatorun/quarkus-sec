@@ -11,9 +11,12 @@ public class ApiGateway {
 
     @GET
     @Path("/sample/1.0")
-    @RolesAllowed({"admin"})
     @Produces(MediaType.TEXT_PLAIN)
-    public String admin() {
-        return "Hello satoshi";
+    @RolesAllowed({"admin"})
+    public String apires() throws Exception {
+        String urls = "http://localhost:3000/";
+        String connect = URLGetConnection.getText(urls);
+        //String urls = "satoshi";
+        return connect;
     }
 }

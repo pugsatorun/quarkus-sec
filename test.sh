@@ -3,7 +3,7 @@ echo "UserName :"
 read usr
 echo "Password :"
 read pas
-KC_CLIENT_ID=backend-service
+KC_CLIENT_ID=apigateway
 KC_ISSUER=http://localhost:8180/auth/realms/quarkus
 
 # Simple test user
